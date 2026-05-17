@@ -2,7 +2,7 @@
 
 A sleek, modern, and fully responsive web application of the classic "Rock, Paper, Scissors" game. This project is built using core front-end web technologies, focusing heavily on clean UI/UX and fluid layout adaptivity across various devices.
 
-🚀 **[Live Demo Link](Paste_Your_Vercel_Or_GitHub_Pages_Link_Here)**
+🚀 **[Live Demo Link](https://rock-paper-scissors-game-beige-alpha.vercel.app/)**
 
 ---
 

@@ -95,3 +95,15 @@ function show(id){
 }
 
 // localStorage.clear()
+
+// ربط عناصر شاشة البداية
+const startScreen = document.getElementById('start-screen');
+const playBtn = document.getElementById('play-btn');
+
+// عند الضغط على الزر يتم إخفاء شاشة المقدمة وتظهر اللعبة
+playBtn.addEventListener('click', () => {
+    startScreen.style.opacity = '0';
+    setTimeout(() => {
+        startScreen.style.display = 'none';
+    }, 500);
+});
