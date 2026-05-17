@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors Game</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Rock Paper Scissors Game</h1>
+
+      <div class="box" id="box">
+        <h2 id="title">Let`s Go</h2>
+        <div class="show">
+          <div class="user_block">
+            <h3 class="user_title">User</h3>
+            <div class="user" id="user"></div>
+          </div>
+          <div class="computer_block">
+            <h3 class="computer_title">Computer</h3>
+            <div class="computer" id="computer"></div>
+          </div>
+        </div>
+        <div class="icons">
+          <i
+            class="fa-regular fa-hand-back-fist"
+            id="rock"
+            onclick="show(id)"
+          ></i>
+          <i class="fa-regular fa-hand" id="paper" onclick="show(id)"></i>
+          <i
+            class="fa-regular fa-hand-scissors"
+            id="scissors"
+            onclick="show(id)"
+          ></i>
+        </div>
+      </div>
+
+      <div class="record">
+        <p>User: <span id="record_U"></span></p>
+        <p>Computer: <span id="record_C"></span></p>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
