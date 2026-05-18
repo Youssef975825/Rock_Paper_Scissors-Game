@@ -85,13 +85,18 @@ function show(id){
 
     winner(id, computerChoise);
 
-    setInterval(() => {
-        title.innerHTML += '.'
+    let dotsInterval = setInterval(() => {
+        title.innerHTML += ".";
     }, 1000);
-
+    
     setTimeout(function(){
-        location.reload()
-    },4000)
+        clearInterval(dotsInterval);
+        title.innerHTML = "Let`s Go";
+        userbox.innerHTML = "";
+        computerBox.innerHTML = "";
+        computerBox.style.display = 'none';
+        isPlaying = false;
+    }, 4000);
 }
 
 // localStorage.clear()
